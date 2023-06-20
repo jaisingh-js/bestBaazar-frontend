@@ -8,10 +8,15 @@ const routes: Routes = [
       import('src/app/auth/auth.module').then((m) => m.AuthModule),
   },
   {
+    path: 'products',
+    loadChildren: () =>
+      import('src/app/product/product.module').then((m) => m.ProductModule),
+  },
+  {
     path: '',
-    redirectTo: 'auth',
-    pathMatch: 'full'
-  }
+    redirectTo: 'products',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
