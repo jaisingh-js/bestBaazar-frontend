@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "www",
+    "public": "dist/best-baazar-frontend",
     "ignore": [
       "firebase.json",
       "**/.*",
