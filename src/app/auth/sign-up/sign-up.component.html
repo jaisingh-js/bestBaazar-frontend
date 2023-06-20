@@ -1,0 +1,31 @@
+<div class="container ml-auto mr-auto mt-10 flex flex-col w-1/2">
+    <h2 class="self-center text-lg font-bold">SIGN UP</h2>
+
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()" class="flex flex-col justify-content text-gray-600">
+        <div class="m-3 flex flex-col gap-2">
+            <label class="block" for="firstName">First Name</label>
+            <input class="block w-full border p-2" name="firstName" formControlName="first_name"/>
+        </div>
+        <div class="m-3 flex flex-col gap-2">
+            <label class="block" for="lastName">Last Name</label>
+            <input class="block w-full border p-2" name="lastName" formControlName="last_name"/>
+        </div>
+        <div class="m-3 flex flex-col gap-2">
+            <label class="block" for="email">Email</label>
+            <input class="block w-full border p-2" name="email" formControlName="email"/>
+        </div>
+        <div class="m-3 flex flex-col gap-2">
+            <label class="block" for="password">Password</label>
+            <input class="block w-full border p-2" name="password" formControlName="password"/>
+        </div>
+        <div class="m-3 flex flex-col gap-2">
+            <label class="block" for="confirmPassword">Confirm Password</label>
+            <input class="block w-full border p-2" name="confirmPassword" formControlName="confirm_password"/>
+        </div>
+    
+        <div class="m-3 flex flex-col gap-2">
+            <button type="submit" class="bg-indigo-600 rounded-md p-2 text-white w-full">Sign Up</button>
+        </div>
+    </form>
+</div>
+
